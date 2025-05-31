@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Hobbies</title>
+  <style>
+    #hobbyList {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My Hobbies</h2>
+  <button onclick="toggleHobbies()">Show Hobbies</button>
+
+  <ul id="hobbyList">
+    <li>Reading</li>
+    <li>Cooking</li>
+    <li>Gardening</li>
+    <li>Photography</li>
+    <li>Traveling</li>
+  </ul>
+
+  <script>
+    function toggleHobbies() {
+      const list = document.getElementById("hobbyList");
+      if (list.style.display === "none") {
+        list.style.display = "block";
+      } else {
+        list.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
